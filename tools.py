@@ -319,7 +319,6 @@ class ArxivSearch:
                 except Exception as e:
                     print(f"Failed to delete temporary file {pdf_filename}: {e}")
             time.sleep(2.0)  # Avoid frequent requests
-
         return pdf_text
 
 """

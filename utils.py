@@ -12,7 +12,7 @@ def compile_latex(latex_code, compile=True, output_filename="output.pdf", timeou
     dir_path = "research_dir/tex"
     tex_file_path = os.path.join(dir_path, "temp.tex")
     # Write the LaTeX code to the .tex file in the specified directory
-    with open(tex_file_path, "w") as f:
+    with open(tex_file_path, "w",encoding="utf-8") as f:
         f.write(latex_code)
 
     if not compile:
